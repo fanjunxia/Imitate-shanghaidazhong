@@ -1,0 +1,58 @@
+@charset "GB2312";
+
+@import "../../lib/base";
+
+//================================news
+.news {
+  //==============news-pic
+  .news-pic {
+    margin-bottom: @mg30;
+    img {
+      width: 100%;
+    }
+  }
+  //==============БъЬт
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-size: @fz36;
+    margin-bottom: 5px;
+  }
+  //==============news-menu
+  .news-menu {
+    text-align: center;
+    margin-bottom: 50px;
+    li {
+      display: inline-block;
+      padding: 0 25px;
+      & + li {
+        border-left: 1px dotted @color3;
+      }
+      a {
+        display: block;
+        font-size: @fz20;
+        padding: 10px 0;
+        color: @color3;
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 300px;
+          height: 7px;
+          background: url('../../images/bg_menu.png');
+          bottom: 0;
+          left: -150px;
+          margin-left: 50%;
+          display: none;
+        }
+        &:hover {
+          color: rgb(0, 83, 166);
+        }
+      }
+      &.active a::before {
+        display: block;
+      }
+    }
+  }
+}

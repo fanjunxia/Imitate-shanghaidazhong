@@ -1,0 +1,60 @@
+@charset "GB2312";
+
+@import "news";
+//=============================con
+.news-con {
+  padding: 0 @mg20;
+  .news-list {
+    background-color: rgb(238, 238, 238);
+    width: 33.33%;
+    float: left;
+    padding: 12px;
+    background-clip: content-box;
+    //=====Õº∆¨
+    .news-img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    //=====–≈œ¢
+    .news-message {
+      padding: 12px;
+      color: @color2;
+      font-size: 12px;
+      line-height: 18px;
+      .news-list-title {
+        height: 48px;
+        line-height: 24px;
+        margin: 12px 0;
+        a {
+          display: block;
+          color: @color3;
+          font-weight: bold;
+          font-size: @fz16;
+        }
+      }
+      .news-list-text {
+        height: 90px;
+        text-indent: 2em;
+        margin-bottom: 40px;
+        overflow: hidden;
+        p {
+          margin: 0;
+        }
+      }
+      .news-list-bottom {
+        .news-list-share {
+          float: right;
+          a {
+            display: inline-block;
+            padding: 0 5px;
+          }
+          img {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
