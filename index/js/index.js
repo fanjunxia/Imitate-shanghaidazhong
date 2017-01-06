@@ -1,15 +1,14 @@
 /**
  * Created by admin on 2016/10/14.
- * ±àÂë£ºGB2312
  */
 "use strict";
 (function () {
-    /*ÂÖ²¥Í¼º¯Êý*/
+    /*è½®æ’­å›¾å‡½æ•°*/
     function banner(images) {
         var $slider = $('.banner');
-        /*Æ´½Ó×Ö·û´®*/
+        /*æ‹¼æŽ¥å­—ç¬¦ä¸²*/
         var str = '';
-        str += '<div id="html5zoo-1" style="display:block;position:relative;margin:0px auto;">';
+        str += '<div id="html5zoo-1" style="display:block;position:relative;margin:0 auto;">';
         str += '<ul class="html5zoo-slides" style="display:none;">';
         for (var i = 0; i < images.length; i++) {
             str += '<li><a href="###" target="_blank">';
@@ -25,7 +24,7 @@
         $slider.html(str);
     }
 
-    /*ÂÖ²¥Í¼Ö´ÐÐ*/
+    /*è½®æ’­å›¾æ‰§è¡Œ*/
     var imgs = [
         '1920_565_1.jpg',
         '1920_565_22.jpg',

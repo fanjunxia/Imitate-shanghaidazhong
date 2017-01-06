@@ -1,6 +1,6 @@
 /**
  * Created by admin on 2016/10/15.
- * ±àÂëGB2312
+ * ç¼–ç GB2312
  */
 "use strict";
 function News(json) {
@@ -14,12 +14,12 @@ function News(json) {
     this.init();
 }
 News.prototype = {
-    //==================³õÊ¼»¯
+    //==================åˆå§‹åŒ–
     init: function () {
         this.bindDOM();
         this.bindEvents();
     },
-    //==================°ó¶¨DOMÔªËØ
+    //==================ç»‘å®šDOMå…ƒç´ 
     bindDOM: function () {
         var str = '';
         str += '<div class="news-list">';
@@ -29,7 +29,7 @@ News.prototype = {
         str += '<div class="news-list-text"><p>' + this.content + '</p></div>';
         str += '<div class="news-list-bottom clearfix">';
         str += '<span class="news-list-date">' + this.date + '</span>';
-        str += '<span class="news-list-share">·ÖÏí';
+        str += '<span class="news-list-share">åˆ†äº«';
         str += '<a href="#"><img src="../images/xinlangweibo2.jpg" alt=""></a><a href="#"><img src="../images/qqweibo2.jpg" alt=""></a>';
         str += '</span>';
         str += '</div>';
